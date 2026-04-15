@@ -7,7 +7,7 @@ const AboutFriend = ({ expectedFriend }) => {
   const { tags, status, picture, name, bio, email } =
     expectedFriend;
   return (
-    <div className="space-y-5">
+    <div className="space-y-5 w-full">
       <div className="shadow-lg mx-auto w-full bg-white p-4 flex flex-col justify-center items-center gap-1 rounded-lg">
         <img
           className="h-24 w-24 rounded-full object-cover"

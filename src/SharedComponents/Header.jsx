@@ -26,7 +26,7 @@ const Header = () => {
     <header className="shadow-md py-3">
       <div className="flex flex-col md:flex-row justify-between items-center w-[98%] md:w-[95%] mx-auto">
         <Link to="/">
-          <span className="text-2xl font-bold">Keen</span>
+          <span className="text-2xl font-bold text-blue-950">Keen</span>
           <span className="text-2xl text-green-900 font-semibold">Keeper</span>
         </Link>
         <div className="flex gap-10">

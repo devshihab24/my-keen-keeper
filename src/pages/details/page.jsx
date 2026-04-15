@@ -19,7 +19,7 @@ const FriendDetails = () => {
           <FadeLoader color="#01811f"></FadeLoader>
         </div>
       ) : (
-        <div className="grid grid-cols-1 lg:grid-cols-4 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-10 space-y-5">
           <AboutFriend expectedFriend={expectedFriend}></AboutFriend>
           <FriendInfo expectedFriend={expectedFriend}></FriendInfo>
         </div>
