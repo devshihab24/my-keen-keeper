@@ -3,12 +3,13 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import { RouterProvider } from "react-router";
 import { router } from "./Router/router";
-import FriendsDataProvider from "./context/FriendsDataProvider";
+import FriendsDataProvider from "./context/ActivityContextProvider";
+import ActivityContextProvider from "./context/ActivityContextProvider";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <FriendsDataProvider>
+    <ActivityContextProvider>
       <RouterProvider router={router}></RouterProvider>
-    </FriendsDataProvider>
+    </ActivityContextProvider>
   </StrictMode>,
 );

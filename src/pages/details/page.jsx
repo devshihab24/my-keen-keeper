@@ -1,15 +1,14 @@
-import React, { useContext } from "react";
+
 import FriendInfo from "../../components/FriendsInfo/FriendInfo";
 import AboutFriend from "../../components/FriendsInfo/AboutFriend";
 import useFriendsData from "../../hooks/useFriendsData";
-import { FriendsDataContext } from "../../context/FriendsDataContext";
+// import { FriendsDataContext } from "../../context/ActivityContext";
 import { useParams } from "react-router";
 import { FadeLoader } from "react-spinners";
 
 const FriendDetails = () => {
   const { friendsData, isLoading } = useFriendsData();
   const { id } = useParams();
-  const checkInData = useContext(FriendsDataContext);
   const expectedFriend = friendsData.find((friend) => friend.id == id);
   // console.log(expectedFriend);
   return (

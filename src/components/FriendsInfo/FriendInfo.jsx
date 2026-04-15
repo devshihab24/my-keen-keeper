@@ -1,13 +1,28 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BiSolidPhoneCall } from "react-icons/bi";
 import { MdVideoChat } from "react-icons/md";
 import { SiImessage } from "react-icons/si";
+import { ActivityContext } from "../../context/ActivityContext";
 
 const FriendInfo = ({ expectedFriend }) => {
-  const { goal, days_since_contact, next_due_date } = expectedFriend;
-  const handleAdd = (type) =>{
+  const { goal, days_since_contact, next_due_date, id } = expectedFriend;
+  const {  addActivity } = useContext(ActivityContext);
+
+  const handleAdd = (type) => {
     console.log("Btn clicked", type);
-  }
+    const newActivity = {
+      a_id: id,
+      a_type: type,
+      a_date: new Date().toLocaleDateString("en-US", {
+        month: 'long',
+        day: "numeric",
+        year: 'numeric'
+      }),
+      a_friendName: expectedFriend.name,
+    };
+    addActivity(newActivity)
+    // console.log( addActivity);
+  };
   return (
     <div className="col-span-2 space-y-5">
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-10 w-full ">
@@ -40,15 +55,24 @@ const FriendInfo = ({ expectedFriend }) => {
       <div className="bg-white shadow-md p-4 space-y-4">
         <h3 className="text-lg font-semibold text-gray-800">Quick Check-In</h3>
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-5">
-          <div onClick={()=>handleAdd('call')} className="p-8 rounded-lg border border-gray-300 bg-[#F8FAFC] flex flex-col justify-center items-center cursor-pointer">
+          <div
+            onClick={() => handleAdd("call")}
+            className="p-8 rounded-lg border border-gray-300 bg-[#F8FAFC] flex flex-col justify-center items-center cursor-pointer"
+          >
             <BiSolidPhoneCall className="text-[28px] mb-1" />
             <p>Call</p>
           </div>
-          <div onClick={()=>handleAdd('text')} className="p-8 rounded-lg border border-gray-300 bg-[#F8FAFC] flex flex-col justify-center items-center cursor-pointer">
+          <div
+            onClick={() => handleAdd("text")}
+            className="p-8 rounded-lg border border-gray-300 bg-[#F8FAFC] flex flex-col justify-center items-center cursor-pointer"
+          >
             <SiImessage className="text-2xl mb-1" />
             <p>Text</p>
           </div>
-          <div onClick={()=>handleAdd('video')} className="p-8 rounded-lg border border-gray-300 bg-[#F8FAFC] flex flex-col justify-center items-center cursor-pointer">
+          <div
+            onClick={() => handleAdd("video")}
+            className="p-8 rounded-lg border border-gray-300 bg-[#F8FAFC] flex flex-col justify-center items-center cursor-pointer"
+          >
             <MdVideoChat className="text-3xl  mb-1" />
             <p>Video</p>
           </div>
