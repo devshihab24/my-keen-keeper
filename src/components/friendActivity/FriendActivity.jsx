@@ -10,8 +10,8 @@ const FriendActivity = ({ item }) => {
       {a_type == "text" && <img src={textImg} alt="text img" />}
       {a_type == "video" && <img src={videoImg} alt="video img" />}
       <div>
-        <h2 className="text-xl font-semibold text-gray-800">{a_friendName}</h2>
-        <p>{a_date}</p>
+        <h2 className="text-xl font-semibold text-gray-800"><span className="text-gray-500 font-normal capitalize">{a_type} with</span> {a_friendName}</h2>
+        <p className="text-gray-600">{a_date}</p>
       </div>
     </div>
   );

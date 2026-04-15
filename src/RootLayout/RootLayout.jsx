@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../SharedComponents/Header';
 import { Outlet } from 'react-router';
 import Footer from '../SharedComponents/Footer';
+import { ToastContainer } from 'react-toastify';
 
 const RootLayout = () => {
     return (
@@ -11,6 +12,7 @@ const RootLayout = () => {
                 <Outlet></Outlet>
             </div>
             <Footer></Footer>
+            <ToastContainer autoClose={2500} theme='dark'></ToastContainer>
         </div>
     );
 };

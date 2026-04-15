@@ -3,6 +3,7 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 import { MdVideoChat } from "react-icons/md";
 import { SiImessage } from "react-icons/si";
 import { ActivityContext } from "../../context/ActivityContext";
+import { toast } from "react-toastify";
 
 const FriendInfo = ({ expectedFriend }) => {
   const { goal, days_since_contact, next_due_date, id } = expectedFriend;
@@ -21,6 +22,7 @@ const FriendInfo = ({ expectedFriend }) => {
       a_friendName: expectedFriend.name,
     };
     addActivity(newActivity)
+    toast.success(`Added activity ${type} with ${newActivity.a_friendName}`)
     // console.log( addActivity);
   };
   return (
