@@ -1,22 +1,14 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import { RouterProvider } from "react-router";
+import { router } from "./Router/router";
+import FriendsDataProvider from "./context/FriendsDataProvider";
 
-
-const router = createBrowserRouter([{
-  path: '/',
-  element: <h2>This is home page</h2>
-},
-{
-  path:'/about',
-  element: <h2>This is about page</h2>
-}
-
-])
-
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <FriendsDataProvider>
+      <RouterProvider router={router}></RouterProvider>
+    </FriendsDataProvider>
   </StrictMode>,
-)
+);

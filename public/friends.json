@@ -2,11 +2,11 @@
   {
     "id": 1,
     "name": "John Doe",
-    "picture": "https://example.com/photo1.jpg",
+    "picture": "https://i.ibb.co.com/ks6s6B60/download-1.jpg",
     "email": "john@example.com",
     "days_since_contact": 12,
     "status": "overdue",
-    "tags": ["college", "close friend"],
+    "tags": ["college"],
     "bio": "Met in university. Love hiking together.",
     "goal": 14,
     "next_due_date": "2025-07-20"
@@ -14,11 +14,11 @@
   {
     "id": 2,
     "name": "Sarah Khan",
-    "picture": "https://example.com/photo2.jpg",
+    "picture": "https://i.ibb.co.com/tTSqYQqx/friend-8.jpg",
     "email": "sarah@example.com",
     "days_since_contact": 5,
     "status": "on_track",
-    "tags": ["work", "team"],
+    "tags": ["work"],
     "bio": "Colleague from marketing team.",
     "goal": 10,
     "next_due_date": "2025-07-25"
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "name": "Michael Lee",
-    "picture": "https://example.com/photo3.jpg",
+    "picture": "https://i.ibb.co.com/zWb0fCC4/friend-6.jpg",
     "email": "michael@example.com",
     "days_since_contact": 20,
     "status": "overdue",
@@ -38,7 +38,7 @@
   {
     "id": 4,
     "name": "Ayesha Rahman",
-    "picture": "https://example.com/photo4.jpg",
+    "picture": "https://i.ibb.co.com/Tqwxfjjp/download.jpg",
     "email": "ayesha@example.com",
     "days_since_contact": 2,
     "status": "on_track",
@@ -50,10 +50,10 @@
   {
     "id": 5,
     "name": "David Wilson",
-    "picture": "https://example.com/photo5.jpg",
+    "picture": "https://i.ibb.co.com/zTTG82H0/friend-7.jpg",
     "email": "david@example.com",
     "days_since_contact": 30,
-    "status": "overdue",
+    "status": "almost_due",
     "tags": ["travel"],
     "bio": "Met during a trip to Thailand.",
     "goal": 21,
@@ -62,7 +62,7 @@
   {
     "id": 6,
     "name": "Fatima Noor",
-    "picture": "https://example.com/photo6.jpg",
+    "picture": "https://i.ibb.co.com/q3wWFD4J/friend-3.jpg",
     "email": "fatima@example.com",
     "days_since_contact": 8,
     "status": "on_track",
@@ -74,7 +74,7 @@
   {
     "id": 7,
     "name": "James Anderson",
-    "picture": "https://example.com/photo7.jpg",
+    "picture": "https://i.ibb.co.com/p6LfPgND/friend-9.jpg",
     "email": "james@example.com",
     "days_since_contact": 15,
     "status": "overdue",
@@ -86,10 +86,10 @@
   {
     "id": 8,
     "name": "Emily Clark",
-    "picture": "https://example.com/photo8.jpg",
+    "picture": "https://i.ibb.co.com/cM4Z804/friend4.jpg",
     "email": "emily@example.com",
     "days_since_contact": 1,
-    "status": "on_track",
+    "status": "almost_due",
     "tags": ["neighbor"],
     "bio": "Lives next door, often hang out.",
     "goal": 7,
@@ -98,7 +98,7 @@
   {
     "id": 9,
     "name": "Ahmed Hassan",
-    "picture": "https://example.com/photo9.jpg",
+    "picture": "https://i.ibb.co.com/mCnYv9hW/friend-10.jpg",
     "email": "ahmed@example.com",
     "days_since_contact": 18,
     "status": "overdue",
@@ -110,10 +110,10 @@
   {
     "id": 10,
     "name": "Olivia Martinez",
-    "picture": "https://example.com/photo10.jpg",
+    "picture": "https://i.ibb.co.com/rG03qws4/friend-5.jpg",
     "email": "olivia@example.com",
     "days_since_contact": 3,
-    "status": "on_track",
+    "status": "almost_due",
     "tags": ["book club"],
     "bio": "Met at a local book club.",
     "goal": 10,
