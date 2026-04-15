@@ -4,9 +4,10 @@ import { IoNotificationsCircle } from "react-icons/io5";
 import { MdDeleteForever } from "react-icons/md";
 
 const AboutFriend = ({ expectedFriend }) => {
-  const { tags, status, picture, name, bio } = expectedFriend;
+  const { tags, status, picture, name, bio, email } =
+    expectedFriend;
   return (
-    <div className="space-y-5 my-10">
+    <div className="space-y-5">
       <div className="shadow-lg mx-auto w-full bg-white p-4 flex flex-col justify-center items-center gap-1 rounded-lg">
         <img
           className="h-24 w-24 rounded-full object-cover"
@@ -33,10 +34,23 @@ const AboutFriend = ({ expectedFriend }) => {
         <p className="text-gray-600 font-semibold text-lg text-center">
           <i>"{bio}"</i>
         </p>
-        <p className="text-sm text-gray-600 font-semibold">Preferred: email</p>
+        <p className="text-sm text-gray-600 font-semibold">
+          Preferred: {email}
+        </p>
       </div>
       <div className="space-y-3">
-        <button className="btn w-full bg-white text-gray-600"><IoNotificationsCircle className="text-lg" />Snooze 2 weeks</button><button className="btn w-full bg-white text-gray-600"><IoMdArchive className="text-base" />Archive</button><button className="btn w-full bg-white text-red-400"><MdDeleteForever className="text-xl" />Delete</button>
+        <button className="btn w-full bg-white text-gray-600">
+          <IoNotificationsCircle className="text-lg" />
+          Snooze 2 weeks
+        </button>
+        <button className="btn w-full bg-white text-gray-600">
+          <IoMdArchive className="text-base" />
+          Archive
+        </button>
+        <button className="btn w-full bg-white text-red-400">
+          <MdDeleteForever className="text-xl" />
+          Delete
+        </button>
       </div>
     </div>
   );

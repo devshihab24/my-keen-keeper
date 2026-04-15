@@ -1,7 +1,7 @@
 import { Link } from "react-router";
 
 const FriendsCard = ({ friend }) => {
-  const { tags, status, picture, name,id } = friend;
+  const { tags, status, picture, name,id,days_since_contact } = friend;
 //   console.log(friend);
   return (
     <Link to={`/details/${id}`}>
@@ -12,7 +12,7 @@ const FriendsCard = ({ friend }) => {
           alt={name}
         />
         <h4 className="text-2xl font-semibold text-gray-800">{name}</h4>
-        <p className="text-gray-400">62d ago</p>
+        <p className="text-gray-400">{days_since_contact} Days</p>
         <div className="flex gap-2 mb-1">
           {tags.map((tag, idx) => (
             <div
