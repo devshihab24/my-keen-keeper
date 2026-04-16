@@ -7,7 +7,6 @@ const TimeLine = () => {
   const [filterActivity, setFilterActivity] = useState(activity);
   // console.log(activity);
   const handleFilter = (e) => {
-    console.log(e.target.value);
     if (e.target.value == "all") {
       return setFilterActivity(activity);
     }
@@ -16,7 +15,7 @@ const TimeLine = () => {
     );
     setFilterActivity(filteredData);
   };
-  console.log(filterActivity);
+  // console.log(filterActivity);
   return (
     <div className="py-10 w-[95%] md:w-[90%] lg:w[85%] mx-auto space-y-5">
       <div className="space-y-4">
@@ -32,9 +31,13 @@ const TimeLine = () => {
         </select>
       </div>
       <div className="space-y-3">
-        {filterActivity.map((item, idx) => (
-          <FriendActivity key={idx} item={item}></FriendActivity>
-        ))}
+        {filterActivity.length == 0 ? (
+          <h2 className="min-h-[40vh] flex justify-center items-center text-4xl text-green-400 font-bold">No Activity Added Yet.</h2>
+        ) : (
+          filterActivity.map((item, idx) => (
+            <FriendActivity key={idx} item={item}></FriendActivity>
+          ))
+        )}
       </div>
     </div>
   );

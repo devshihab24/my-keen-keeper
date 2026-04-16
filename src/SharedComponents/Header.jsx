@@ -23,7 +23,7 @@ const Header = () => {
     },
   ];
   return (
-    <header className="shadow-md py-3 backdrop-blur-lg fixed top-0 left-0 w-full">
+    <header className="shadow-md py-3 backdrop-blur-lg fixed top-0 left-0 w-full z-50">
       <div className="flex flex-col md:flex-row justify-between items-center w-[98%] md:w-[95%] mx-auto">
         <Link to="/">
           <span className="text-2xl font-bold text-blue-950">Keen</span>
