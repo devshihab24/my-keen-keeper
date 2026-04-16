@@ -26,7 +26,7 @@ export const router = createBrowserRouter([
       {
         path: "/timeline",
         element: <TimeLine></TimeLine>,
-      },
+      }
     ],
     errorElement: <ErrorPage></ErrorPage>
   },
