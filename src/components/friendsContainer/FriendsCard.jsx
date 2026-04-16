@@ -5,7 +5,7 @@ const FriendsCard = ({ friend }) => {
 //   console.log(friend);
   return (
     <Link to={`/details/${id}`}>
-      <div className="shadow-lg mx-auto max-w-100 bg-white p-4 flex flex-col justify-center items-center gap-1 rounded-lg">
+      <div className="shadow-lg mx-auto max-w-100 bg-white p-4 flex flex-col justify-center items-center gap-1 rounded-lg duration-400 transform ease-in delay-200 hover:-translate-y-2">
         <img
           className="h-24 w-24 rounded-full object-cover"
           src={picture}

@@ -10,7 +10,7 @@ const FriendInfo = ({ expectedFriend }) => {
   const {  addActivity } = useContext(ActivityContext);
 
   const handleAdd = (type) => {
-    console.log("Btn clicked", type);
+    // console.log("Btn clicked", type);
     const newActivity = {
       a_id: id,
       a_type: type,
@@ -59,21 +59,21 @@ const FriendInfo = ({ expectedFriend }) => {
         <div className="grid grid-cols-2 lg:grid-cols-3 gap-5">
           <div
             onClick={() => handleAdd("call")}
-            className="p-8 rounded-lg border border-gray-300 bg-[#F8FAFC] flex flex-col justify-center items-center cursor-pointer"
+            className="p-8 rounded-lg border border-gray-300 bg-[#F8FAFC] flex flex-col justify-center items-center cursor-pointer transition duration-300 hover:shadow-xl hover:shadow-blue-200"
           >
             <BiSolidPhoneCall className="text-[28px] mb-1" />
             <p>Call</p>
           </div>
           <div
             onClick={() => handleAdd("text")}
-            className="p-8 rounded-lg border border-gray-300 bg-[#F8FAFC] flex flex-col justify-center items-center cursor-pointer"
+            className="p-8 rounded-lg border border-gray-300 bg-[#F8FAFC] flex flex-col justify-center items-center cursor-pointer transition duration-300 hover:shadow-xl hover:shadow-blue-200"
           >
             <SiImessage className="text-2xl mb-1" />
             <p>Text</p>
           </div>
           <div
             onClick={() => handleAdd("video")}
-            className="p-8 rounded-lg border border-gray-300 bg-[#F8FAFC] flex flex-col justify-center items-center cursor-pointer"
+            className="p-8 rounded-lg border border-gray-300 bg-[#F8FAFC] flex flex-col justify-center items-center cursor-pointer transition duration-300 hover:shadow-xl hover:shadow-blue-200"
           >
             <MdVideoChat className="text-3xl  mb-1" />
             <p>Video</p>

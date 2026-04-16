@@ -4,7 +4,7 @@ import { ActivityContext } from "../../context/ActivityContext";
 
 const Stats = () => {
     const { activity } = useContext(ActivityContext);
-    console.log(activity);
+    // console.log(activity);
     const getChartData = (activity) =>{
         const counts = {call:0, video:0, text:0}
         activity.forEach(item => {
