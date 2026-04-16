@@ -1,12 +1,25 @@
-# React + Vite
+# KeenKeeper Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+KeenKeeper is a friend activity tracking web app that helps you stay connected with the people in your life.
+It displays your friends list with their profile, relationship tags (like Family, Work, College), how many days since you last contacted them, and a status badge — On Track, Almost Due, or Overdue — so you never lose touch.
+Clicking on a friend takes you to their detail page where you can log interactions via Call, Text, or Video. All activities are recorded in the Timeline page, which can be filtered by type. The Stats page then visualizes your activity data through charts, giving you a quick overview of how you've been keeping in touch.
+<br>
 
-Currently, two official plugins are available:
+## Technologies Used
+- React.js
+- React Router
+- JavaScript (ES6+)
+- Tailwind CSS, DaisyUI
+- React-Toastify (NPM Package)
+- JSON (for product data)
+- Recahrts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## 3 key features about DigiTools 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **🧑‍🤝‍🧑 Friend Status Tracking:** Displays each friend with their last contact date and a smart status badge — On Track, Almost Due, or Overdue — so you always know who needs your attention.
+- **📋 Activity Timeline:** Every call, text, and video interaction is logged and displayed in a filterable timeline, making it easy to review your communication history with friends.
+- **📊 Visual Stats with Charts:** The Stats page visualizes your activity data through charts, giving you a clear picture of your overall communication patterns at a glance.
+
+[Visit KeenKeeper](https://sh-keen-keeper.netlify.app/)
