@@ -39,15 +39,15 @@ const AboutFriend = ({ expectedFriend }) => {
         </p>
       </div>
       <div className="space-y-3">
-        <button className="btn w-full bg-white text-gray-600">
+        <button className="btn py-6 w-full bg-white text-gray-600">
           <IoNotificationsCircle className="text-lg" />
           Snooze 2 weeks
         </button>
-        <button className="btn w-full bg-white text-gray-600">
+        <button className="btn py-6 w-full bg-white text-gray-600">
           <IoMdArchive className="text-base" />
           Archive
         </button>
-        <button className="btn w-full bg-white text-red-400">
+        <button className="btn py-6 w-full bg-white text-red-400">
           <MdDeleteForever className="text-xl" />
           Delete
         </button>

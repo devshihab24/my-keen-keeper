@@ -32,7 +32,7 @@ const Banner = () => {
         </p>
         <button className="btn bg-green-900 text-white"><IoMdAdd className="text-lg"></IoMdAdd>Add a Friend</button>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 ">
         {
             cardData.map((item, idx)=> <BannerCard item={item} key={idx}></BannerCard>)
         }

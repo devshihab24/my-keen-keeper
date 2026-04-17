@@ -8,7 +8,7 @@ import { toast } from "react-toastify";
 const FriendInfo = ({ expectedFriend }) => {
   const { goal, days_since_contact, next_due_date, id } = expectedFriend;
   const {  addActivity } = useContext(ActivityContext);
-
+  const infoStyle = "p-3 md:p-6 lg:p-8 rounded-lg border border-gray-300 bg-[#F8FAFC] flex flex-col justify-center items-center cursor-pointer transition duration-300 hover:shadow-xl hover:shadow-blue-200"
   const handleAdd = (type) => {
     // console.log("Btn clicked", type);
     const newActivity = {
@@ -27,8 +27,8 @@ const FriendInfo = ({ expectedFriend }) => {
   };
   return (
     <div className="col-span-2 space-y-5">
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-10 w-full ">
-        <div className="bg-white shadow-md flex flex-col justify-center items-center rounded-lg">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10 w-full ">
+        <div className="bg-white p-8 shadow-md flex flex-col justify-center items-center rounded-lg">
           <p className="text-3xl font-semibold text-gray-700">
             {days_since_contact}
           </p>
@@ -54,26 +54,26 @@ const FriendInfo = ({ expectedFriend }) => {
           Connect every <span className="text-gray-800 font-bold">30 days</span>
         </p>
       </div>
-      <div className="bg-white shadow-md p-4 space-y-4">
+      <div className="bg-white rounded-lg shadow-md p-4 space-y-4">
         <h3 className="text-lg font-semibold text-gray-800">Quick Check-In</h3>
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           <div
             onClick={() => handleAdd("call")}
-            className="p-8 rounded-lg border border-gray-300 bg-[#F8FAFC] flex flex-col justify-center items-center cursor-pointer transition duration-300 hover:shadow-xl hover:shadow-blue-200"
+            className={infoStyle}
           >
             <BiSolidPhoneCall className="text-[28px] mb-1" />
             <p>Call</p>
           </div>
           <div
             onClick={() => handleAdd("text")}
-            className="p-8 rounded-lg border border-gray-300 bg-[#F8FAFC] flex flex-col justify-center items-center cursor-pointer transition duration-300 hover:shadow-xl hover:shadow-blue-200"
+            className={infoStyle}
           >
             <SiImessage className="text-2xl mb-1" />
             <p>Text</p>
           </div>
           <div
             onClick={() => handleAdd("video")}
-            className="p-8 rounded-lg border border-gray-300 bg-[#F8FAFC] flex flex-col justify-center items-center cursor-pointer transition duration-300 hover:shadow-xl hover:shadow-blue-200"
+            className={infoStyle}
           >
             <MdVideoChat className="text-3xl  mb-1" />
             <p>Video</p>
